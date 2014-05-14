@@ -6,6 +6,8 @@ $(document).ready(function(){
 	//adding new items to the list
     $('#button').click(function(){
        var toAdd = listItem.val();
+        
+        //If the user's input is greater than zero, add it.  Otherwise, give the user an alert, don't add anything to the list.
         if (toAdd.length > 0) {
         $('.list').append('<div class="item">' + toAdd + '<img src = "img/bin.png" id="bin"></div>');
         listItem.val('');  
@@ -15,11 +17,6 @@ $(document).ready(function(){
         alert('You want to add nothing to your to do list?  Seriously?  New level of laziness achieved.')
 
       }
-       
-
-
-       
-
 
  });
 
