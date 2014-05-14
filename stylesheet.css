@@ -60,7 +60,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bfe8', end
 	height:100%;
 	border-radius:10px;
 	padding: 10px 10px 10px 10px;
-
+	box-shadow: 5px 5px 15px black;
 
 }
 
@@ -98,6 +98,8 @@ h1 {
 	width:100%;
 	border:1px solid #62B3FF;
 	word-wrap:break-word;
+	padding-left:2px;
+	
 	background: #88bfe8; /* Old browsers */
 background: -moz-linear-gradient(top,  #88bfe8 46%, #70b0e0 78%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(46%,#88bfe8), color-stop(78%,#70b0e0)); /* Chrome,Safari4+ */
