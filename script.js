@@ -24,7 +24,7 @@ $(document).ready(function(){
  });
 
     //Push enter to add, as opposed to clicking the button.  Return false prevents the page from refreshing upon pushing enter.
-    blah.keypress(function(e){
+    listItem.keypress(function(e){
    		if(e.which == 13) {
    		$('#button').click();
         return false;
