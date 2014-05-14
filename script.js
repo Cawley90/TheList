@@ -1,24 +1,30 @@
 $(document).ready(function(){
     
+  var listItem = $('#checkListItem');
+  var list = $('.list');
+
 	//adding new items to the list
     $('#button').click(function(){
-       var toAdd = $('input[id=checkListItem]').val();
+       var toAdd = listItem.val();
+        if (toAdd.length > 0) {
         $('.list').append('<div class="item">' + toAdd + '<img src = "img/bin.png" id="bin"></div>');
-        $('#checkListItem').val('');
+        listItem.val('');  
+      }
+
+      else {
+        alert('You want to add nothing to your to do list?  Seriously?  New level of laziness achieved.')
+
+      }
+       
 
 
-        //If users enter nothing, prompt "why you do this".
-        if (toAdd.length == 0) {
-        alert('You want to add nothing to your to do list?  Seriously?  New level of laziness achieved.');
-        $('.list').closest('.item').remove(); 
-        //return false;  <--- another attempt at getting it to remove empty div, didn't work
-        }
+       
 
 
  });
 
     //Push enter to add, as opposed to clicking the button.  Return false prevents the page from refreshing upon pushing enter.
-    $('#checkListItem').keypress(function(e){
+    blah.keypress(function(e){
    		if(e.which == 13) {
    		$('#button').click();
         return false;
@@ -28,7 +34,7 @@ $(document).ready(function(){
 
    	//clear list
     $('#delbutton').click(function(){
-    	$('.list').empty();
+    	list.empty();
 
     })
     
