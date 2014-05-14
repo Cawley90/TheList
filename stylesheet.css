@@ -156,3 +156,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', end
  .fancytext {
  	font-family:Opreg;
  }
+
+ #bin {
+ 	background-image: url('img/bin.png');
+ 	background-position:right;
+ 	float:right;
+}
+
+#socoo {
+	display: inline-block;
+	font-family:Opreg;
+	font-size:20px;
+	position:relative;
+	top:-45px;
+	word-wrap:break-word;
+}
